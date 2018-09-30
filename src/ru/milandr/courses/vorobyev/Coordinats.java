@@ -42,7 +42,7 @@ public class Coordinats
             return String.format("y = %.1fx + %.1f", k, c);
 
         else if (c < 0)
-            return String.format("y = %.1fx - %.1f", k, c);
+            return String.format("y = %.1fx - %.1f", k, -c);
     }
 
     public Coordinats getMiddleCoordinatFrom(Coordinats a)
