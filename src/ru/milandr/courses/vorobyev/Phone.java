@@ -1,7 +1,6 @@
 package ru.milandr.courses.vorobyev;
 
-public class Phone
-{
+public class Phone {
     private String manufacturer;
     private double price;
     private String operatingSystem;
@@ -9,10 +8,9 @@ public class Phone
     private double batteryCapacity;
 
 
-/*Constructors:*/
+    /*Constructors:*/
 
-    public Phone(String manufacturer)
-    {
+    public Phone(String manufacturer) {
         this.manufacturer = manufacturer;
         if (this.manufacturer == "Apple")
             this.operatingSystem = "iOS";
@@ -20,16 +18,12 @@ public class Phone
             this.operatingSystem = "Android";
     }
 
-    public Phone(String manufacturer, double price, double batteryCapacity)
-    {
+    public Phone(String manufacturer, double price, double batteryCapacity) {
         this.manufacturer = manufacturer;
-        if (this.manufacturer == "Apple")
-        {
+        if (this.manufacturer == "Apple") {
             this.operatingSystem = "iOS";
             this.benchmarkResults = 1000000;
-        }
-        else
-        {
+        } else {
             this.operatingSystem = "Android";
             this.benchmarkResults = -2;
         }
@@ -38,8 +32,7 @@ public class Phone
         this.benchmarkResults = benchmarkResults;
     }
 
-    public Phone(String manufacturer, double price, String operatingSystem, int benchmarkResults, double batteryCapacity)
-    {
+    public Phone(String manufacturer, double price, String operatingSystem, int benchmarkResults, double batteryCapacity) {
         this.manufacturer = manufacturer;
         this.price = price;
         this.operatingSystem = operatingSystem;
@@ -47,53 +40,50 @@ public class Phone
         this.batteryCapacity = batteryCapacity;
     }
 
-    public Phone() { }
+    public Phone() {
+    }
 
-/* Getters and setters: */
+    /* Getters and setters: */
 
-    public void setManufacturer(String manufacturer)
-    {
+    public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
     }
-    public String getManufacturer()
-    {
+
+    public String getManufacturer() {
         return this.manufacturer;
     }
 
-    public void setPrice(double price)
-    {
+    public void setPrice(double price) {
         this.price = price;
     }
-    public double getPrice()
-    {
+
+    public double getPrice() {
         return this.price;
     }
 
-    public void setOperatingSystem(String operatingSystem)
-    {
+    public void setOperatingSystem(String operatingSystem) {
         this.operatingSystem = operatingSystem;
     }
-    public String getOperatingSystem()
-    {
+
+    public String getOperatingSystem() {
         return this.operatingSystem;
     }
 
-    public void setBenchmarkResults(int benchmarkResults)
-    {
+    public void setBenchmarkResults(int benchmarkResults) {
         this.benchmarkResults = benchmarkResults;
     }
-    public int getBenchmarkResult()
-    {
+
+    public int getBenchmarkResult() {
         return this.benchmarkResults;
     }
 
-    public void setBatteryCapacity(double batteryCapacity)
-    {
+    public void setBatteryCapacity(double batteryCapacity) {
         this.batteryCapacity = batteryCapacity;
     }
-    public double getBatteryCapacity()
-    {
+
+    public double getBatteryCapacity() {
         return this.batteryCapacity;
     }
+
 
 }

@@ -3,13 +3,12 @@ package ru.milandr.courses;
 import ru.milandr.courses.vorobyev.Coordinats;
 import ru.milandr.courses.vorobyev.Phone;
 
-public class Application
-{
-    public static void main(String[] args)
-    {
-        Phone myPhone = new Phone("Apple", 1000, 1000);
+class Application {
+    public static void main(String[] args) {
         Coordinats coord1 = new Coordinats(1, 1);
-        Coordinats coord2 = new Coordinats(1, 1);
-        System.out.println(Coordinats.getCircleEquation(coord1, coord2));
+        Coordinats coord2 = new Coordinats(2, 2);
+        Phone iphone = new Phone("Apple");
+        System.out.println(Coordinats.getLinearEquation(coord1, coord2));
+        System.out.println(iphone.getOperatingSystem());
     }
 }

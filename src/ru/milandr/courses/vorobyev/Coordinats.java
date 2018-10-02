@@ -80,3 +80,4 @@ public class Coordinats {
 
         return String.format("(x - %.1f)^2 + (y - %.1f)^2 = %.1f", centre.x, centre.y, Rsquared);
     }
+}
