@@ -76,6 +76,18 @@ public class Alcohol {
 		return this.degree;
 	}
 
+	public void setDegree(double degree) {
+		this.degree = degree;
+	}
+
+	public double getVolume() {
+		return this.volume;
+	}
+
+	public void setVolume(double volume) {
+		this.volume = volume;
+	}
+
 	public Color getColor() {
 		return this.color;
 	}
